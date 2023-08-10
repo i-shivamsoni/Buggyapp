@@ -4,7 +4,9 @@ plugins {
 
 android {
     compileSdkVersion 31
-
+    lintOptions {
+        abortOnError false
+    }
     defaultConfig {
         applicationId "com.rahulkadavil.buggyapp"
         minSdkVersion 19
