@@ -13,9 +13,11 @@
         <activity android:name=".Vulnerability" />
         <activity android:name=".Flagchecker" />
         <activity
+            android:exported="false"
             android:name=".login"
             android:parentActivityName=".MainActivity">
             <meta-data
+
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
 
