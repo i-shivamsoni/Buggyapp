@@ -9,18 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Buggyapp">
-        <activity android:name=".description"></activity>
+        <activity android:name=".description"/>
         <activity android:name=".Vulnerability" />
         <activity android:name=".Flagchecker" />
         <activity
+            android:exported="false"
             android:name=".login"
             android:parentActivityName=".MainActivity">
             <meta-data
+
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-            >
+
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
